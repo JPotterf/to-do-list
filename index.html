@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1>Todo List</h1>
+
+    <!--onclick attribute accesses handler objects' methods -->
+    <div>  
+      <button onclick = "handler.toggleAll()">Toggle All</button>
+    </div>
+    
+    <div> 
+      <button onclick = "handler.addTodo()">Add Task</button>
+      <input id = "addTodoTextInput" type = "text">
+    </div>  
+    
+    <div>
+      <button onclick = 'handler.changeTodo()'>Change Task</button>
+      <input id = "changeTodoPositionInput" type = "number">
+      <input id = "changeTodoTextInput" type = "text">
+    </div>
+  
+    <div>
+      <button onclick = "handler.toggleCompleted()">Is complete?</button>
+      <input id = "toggleCompletedPositionInput" type = "number">
+    </div>
+    
+    <ul>
+    </ul>
+    
+    
+    <script src="script.js"></script>
+  </body>
+
+</html>
